@@ -1,8 +1,24 @@
+
 {
   "users": [
-    { "id": "1", "name": "Sowrabh", "email": "sowrabh@gmail.com", "role": "Admin" },
-    { "id": "2", "name": "Rahul", "email": "rahul@gmail.com", "role": "User" },
-    { "id": "3", "name": "Kiran", "email": "kiran@gmail.com", "role": "User" }
+    {
+      "id": "1",
+      "name": "Sowrabh",
+      "email": "sowrabh@gmail.com",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "role": "User"
+    },
+    {
+      "id": "3",
+      "name": "Kiran",
+      "email": "kiran@gmail.com",
+      "role": "User"
+    }
   ],
   "dailyData": [
     { "id": "1", "date": "2026-11-01", "units": 12.5 },
@@ -16,5 +32,390 @@
   "monthlyData": [
     { "id": "1", "month": "October", "units": 370.6 },
     { "id": "2", "month": "November", "units": 348.9 }
-  ]
+  ],
+  "zones": [
+    {
+      "id": "Z001",
+      "name": "Mangalore",
+      "admin": "Zone Admin 1",
+      "location": "Mangalore",
+      "pincode": "",
+      "description": "Mangalore electricity distribution zone",
+      "meterCount": 3,
+      "status": "Active"
+    },
+    {
+      "id": "Z002",
+      "name": "Udupi",
+      "admin": "Zone Admin 2",
+      "location": "Udupi",
+      "pincode": "",
+      "description": "Udupi electricity distribution zone",
+      "meterCount": 2,
+      "status": "Active"
+    },
+    {
+      "id": "Z003",
+      "name": "Surathkal",
+      "admin": "Zone Admin 3",
+      "location": "Surathkal",
+      "pincode": "",
+      "description": "Surathkal electricity distribution zone",
+      "meterCount": 2,
+      "status": "Active"
+    },
+    {
+      "id": "Z004",
+      "name": "Mulki",
+      "admin": "Zone Admin 4",
+      "location": "Mulki",
+      "pincode": "",
+      "description": "Mulki electricity distribution zone",
+      "meterCount": 2,
+      "status": "Active"
+    }
+  ],
+  "endUsers": [
+    {
+      "id": "EU001",
+      "name": "Aarav Kumar",
+      "email": "aarav@gmail.com",
+      "zoneId": "Z001",
+      "status": "Active"
+    },
+    {
+      "id": "EU002",
+      "name": "Priya Nair",
+      "email": "priya@gmail.com",
+      "zoneId": "Z001",
+      "status": "Active"
+    },
+    {
+      "id": "EU003",
+      "name": "Rahul Shetty",
+      "email": "rahul@gmail.com",
+      "zoneId": "Z002",
+      "status": "Active"
+    },
+    {
+      "id": "EU004",
+      "name": "Ananya Rao",
+      "email": "ananya@gmail.com",
+      "zoneId": "Z002",
+      "status": "Active"
+    },
+    {
+      "id": "EU005",
+      "name": "Kiran Bhat",
+      "email": "kiran@gmail.com",
+      "zoneId": "Z003",
+      "status": "Active"
+    },
+    {
+      "id": "EU006",
+      "name": "Sneha Pai",
+      "email": "sneha@gmail.com",
+      "zoneId": "Z003",
+      "status": "Inactive"
+    },
+    {
+      "id": "EU007",
+      "name": "Arjun Shetty",
+      "email": "arjun@gmail.com",
+      "zoneId": "Z004",
+      "status": "Active"
+    },
+    {
+      "id": "EU008",
+      "name": "Meera Rao",
+      "email": "meera@gmail.com",
+      "zoneId": "Z004",
+      "status": "Active"
+    }
+  ],
+  "zoneAdmins": [
+    {
+      "id": "ZA001",
+      "name": "Zone Admin 1",
+      "email": "admin1@mdms.com",
+      "zoneId": "Z001",
+      "status": "Active"
+    },
+    {
+      "id": "ZA002",
+      "name": "Zone Admin 2",
+      "email": "admin2@mdms.com",
+      "zoneId": "Z002",
+      "status": "Active"
+    },
+    {
+      "id": "ZA003",
+      "name": "Zone Admin 3",
+      "email": "admin3@mdms.com",
+      "zoneId": "Z003",
+      "status": "Inactive"
+    },
+    {
+      "id": "ZA004",
+      "name": "Zone Admin 4",
+      "email": "admin4@mdms.com",
+      "zoneId": "Z004",
+      "status": "Active"
+    }
+  ],
+  "zoneConsumption": [
+    {
+      "id": "1",
+      "zoneId": "Z001",
+      "daily": 1250,
+      "weekly": 8450,
+      "monthly": 35200
+    },
+    {
+      "id": "2",
+      "zoneId": "Z002",
+      "daily": 980,
+      "weekly": 7200,
+      "monthly": 29800
+    },
+    {
+      "id": "3",
+      "zoneId": "Z003",
+      "daily": 1560,
+      "weekly": 10200,
+      "monthly": 41500
+    },
+    {
+      "id": "4",
+      "zoneId": "Z004",
+      "daily": 760,
+      "weekly": 5300,
+      "monthly": 22400
+    }
+  ],
+  "alerts": [
+    {
+      "id": "AL001",
+      "meterId": "M001",
+      "zoneId": "Z001",
+      "title": "Abnormal voltage detected",
+      "description": "Voltage reading exceeded the configured threshold.",
+      "severity": "Critical",
+      "status": "Open",
+      "timestamp": "2026-11-24T09:30:00"
+    },
+    {
+      "id": "AL002",
+      "meterId": "M004",
+      "zoneId": "Z002",
+      "title": "Meter communication failure",
+      "description": "Meter has not transmitted data within the expected interval.",
+      "severity": "High",
+      "status": "Open",
+      "timestamp": "2026-11-24T10:15:00"
+    },
+    {
+      "id": "AL003",
+      "meterId": "M006",
+      "zoneId": "Z003",
+      "title": "Unusual consumption detected",
+      "description": "Consumption is above the configured monitoring threshold.",
+      "severity": "Medium",
+      "status": "Acknowledged",
+      "timestamp": "2026-11-23T14:20:00"
+    },
+    {
+      "id": "AL004",
+      "meterId": "M007",
+      "zoneId": "Z003",
+      "title": "Meter inactive",
+      "description": "Meter is currently reporting an inactive status.",
+      "severity": "Low",
+      "status": "Resolved",
+      "timestamp": "2026-11-22T11:45:00"
+    },
+    {
+      "id": "AL005",
+      "meterId": "M008",
+      "zoneId": "Z004",
+      "title": "Power outage detected",
+      "description": "Meter stopped reporting during the monitoring interval.",
+      "severity": "Critical",
+      "status": "Open",
+      "timestamp": "2026-11-24T12:10:00"
+    },
+    {
+      "id": "AL006",
+      "meterId": "M003",
+      "zoneId": "Z001",
+      "title": "Low voltage warning",
+      "description": "Voltage reading fell below the configured threshold.",
+      "severity": "High",
+      "status": "Resolved",
+      "timestamp": "2026-11-21T08:00:00"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG001",
+      "timestamp": "2026-11-24T09:15:00",
+      "user": "Enterprise Admin",
+      "action": "VIEW_ZONES",
+      "resource": "Zone Management",
+      "status": "Success"
+    },
+    {
+      "id": "LOG002",
+      "timestamp": "2026-11-24T09:30:00",
+      "user": "Zone Admin - Rahul",
+      "action": "VIEW_METER_DETAILS",
+      "resource": "Meter M001",
+      "status": "Success"
+    },
+    {
+      "id": "LOG003",
+      "timestamp": "2026-11-24T10:00:00",
+      "user": "Enterprise Admin",
+      "action": "VIEW_USERS",
+      "resource": "User Management",
+      "status": "Success"
+    },
+    {
+      "id": "LOG004",
+      "timestamp": "2026-11-24T10:20:00",
+      "user": "Enterprise Admin",
+      "action": "VIEW_REPORTS",
+      "resource": "Zone Consumption Report",
+      "status": "Success"
+    },
+    {
+      "id": "LOG005",
+      "timestamp": "2026-11-24T11:05:00",
+      "user": "Zone Admin - Priya",
+      "action": "VIEW_ALERTS",
+      "resource": "Alert AL002",
+      "status": "Failed"
+    },
+    {
+      "id": "LOG006",
+      "timestamp": "2026-11-24T11:45:00",
+      "user": "Enterprise Admin",
+      "action": "VIEW_ZONE_DETAILS",
+      "resource": "Zone Z001",
+      "status": "Success"
+    },
+    {
+      "id": "LOG007",
+      "timestamp": "2026-11-23T14:10:00",
+      "user": "Zone Admin - Rahul",
+      "action": "VIEW_METERS",
+      "resource": "Meter Management",
+      "status": "Success"
+    },
+    {
+      "id": "LOG008",
+      "timestamp": "2026-11-23T15:30:00",
+      "user": "Enterprise Admin",
+      "action": "VIEW_ALERTS",
+      "resource": "Alert Management",
+      "status": "Success"
+    }
+  ],
+  "meters": [
+    {
+      "id": "M001",
+      "meterNumber": "MNG1001",
+      "endUserId": "EU001",
+      "zoneId": "Z001",
+      "type": "Smart Meter",
+      "status": "Active"
+    },
+    {
+      "id": "M002",
+      "meterNumber": "MNG1002",
+      "endUserId": "EU001",
+      "zoneId": "Z001",
+      "type": "Smart Meter",
+      "status": "Active"
+    },
+    {
+      "id": "M003",
+      "meterNumber": "MNG1003",
+      "endUserId": "EU002",
+      "zoneId": "Z001",
+      "type": "Digital Meter",
+      "status": "Active"
+    },
+    {
+      "id": "M004",
+      "meterNumber": "UDP2001",
+      "endUserId": "EU003",
+      "zoneId": "Z002",
+      "type": "Smart Meter",
+      "status": "Active"
+    },
+    {
+      "id": "M005",
+      "meterNumber": "UDP2002",
+      "endUserId": "EU004",
+      "zoneId": "Z002",
+      "type": "Digital Meter",
+      "status": "Active"
+    },
+    {
+      "id": "M006",
+      "meterNumber": "SUR3001",
+      "endUserId": "EU005",
+      "zoneId": "Z003",
+      "type": "Smart Meter",
+      "status": "Active"
+    },
+    {
+      "id": "M007",
+      "meterNumber": "SUR3002",
+      "endUserId": "EU006",
+      "zoneId": "Z003",
+      "type": "Digital Meter",
+      "status": "Inactive"
+    },
+    {
+      "id": "M008",
+      "meterNumber": "MLK4001",
+      "endUserId": "EU007",
+      "zoneId": "Z004",
+      "type": "Smart Meter",
+      "status": "Active"
+    },
+    {
+      "id": "M009",
+      "meterNumber": "MLK4002",
+      "endUserId": "EU008",
+      "zoneId": "Z004",
+      "type": "Digital Meter",
+      "status": "Active"
+    }
+  ],
+  "enterpriseSettings": {
+    "dataRetention": {
+      "meterDataRetentionDays": 365,
+      "auditLogRetentionDays": 180,
+      "reportRetentionDays": 90
+    },
+    "security": {
+      "autoLogoutMinutes": 15,
+      "requireStrongPassword": true,
+      "auditLoggingEnabled": true
+    },
+    "localisation": {
+      "timezone": "Asia/Kolkata",
+      "language": "English",
+      "currency": "INR"
+    },
+    "notifications": {
+      "criticalAlerts": true,
+      "highPriorityAlerts": true,
+      "dailySummary": false,
+      "emailNotifications": true
+    }
+  }
 }
