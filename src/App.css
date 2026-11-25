@@ -30,3 +30,96 @@
   color: #991b1b;
   background: #fee2e2;
 }
+
+.app-error-page {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  color: #1f2937;
+  background: #f3f5f9;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.app-error-card {
+  width: min(100%, 460px);
+  padding: 36px;
+  border: 1px solid #e2e7ef;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 18px 55px #25355112;
+  text-align: center;
+}
+
+.app-error-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 17px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #b54747;
+  background: #fff0ef;
+}
+
+.app-error-code {
+  margin: 0;
+  color: #768398;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .12em;
+}
+
+.app-error-card h1 {
+  margin: 8px 0;
+  font-size: 22px;
+}
+
+.app-error-description {
+  margin: 0 auto;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.app-error-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+
+.app-error-actions a,
+.app-error-actions button {
+  min-height: 38px;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #dfe4ec;
+  border-radius: 7px;
+  color: #273448;
+  background: #fff;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 550;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app-error-actions .app-error-retry {
+  border-color: #4268d5;
+  color: #fff;
+  background: #4268d5;
+}
+
+@media (max-width: 480px) {
+  .app-error-card {
+    padding: 28px 20px;
+  }
+
+  .app-error-actions {
+    flex-direction: column;
+  }
+}
