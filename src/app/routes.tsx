@@ -1,8 +1,19 @@
+
 import { Suspense, type ReactNode } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
+
+import UserLayout from "../features/end-user/components/UserLayout";
+
 import Dashboard from "../features/end-user/pages/Dashboard";
+import Bills from "../features/end-user/pages/Bills";
+import BillDetails from "../features/end-user/pages/BillDetails";
+import MeterData from "../features/end-user/pages/MeterData";
+import UserAlerts from "../features/end-user/pages/UserAlerts";
+import Profile from "../features/end-user/pages/Profile";
+
 import ZoneLayout from "../features/zone/components/ZoneLayout";
 import RouteErrorBoundary from "../shared/routes/RouteErrorBoundary";
+
 import {
   Alerts,
   MeterDetails,
@@ -12,7 +23,12 @@ import {
   ZoneDashboard,
   ZoneSettings,
 } from "../features/zone/components/ZoneRoutePages";
-const loadingPage = <div className="zone-page-loading" role="status">Loading page…</div>;
+
+const loadingPage = (
+  <div className="zone-page-loading" role="status">
+    Loading page…
+  </div>
+);
 
 function lazyElement(element: ReactNode) {
   return <Suspense fallback={loadingPage}>{element}</Suspense>;
@@ -21,8 +37,39 @@ function lazyElement(element: ReactNode) {
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />,
+    element: <Navigate to="/user/dashboard" replace />,
     errorElement: <RouteErrorBoundary />,
+  },
+  {
+    path: "/",
+    element: <UserLayout />,
+    errorElement: <RouteErrorBoundary />,
+    children: [
+      {
+        path: "user/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "user/bills",
+        element: <Bills />,
+      },
+      {
+        path: "user/bills/:billId",
+        element: <BillDetails />,
+      },
+      {
+        path: "user/meter-data",
+        element: <MeterData />,
+      },
+      {
+        path: "user/alerts",
+        element: <UserAlerts />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+    ],
   },
   {
     path: "/zone",

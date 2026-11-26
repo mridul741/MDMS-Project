@@ -1,5 +1,7 @@
+
 import "./Bills.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 type Bill = {
   id: number;
@@ -41,12 +43,14 @@ const bills: Bill[] = [
 ];
 
 function Bills() {
+  const navigate = useNavigate();
   const [statusFilter, setStatusFilter] = useState("All");
 
   const filteredBills =
     statusFilter === "All"
       ? bills
       : bills.filter((bill) => bill.status === statusFilter);
+
   return (
     <div className="bills-page">
       <div className="bills-header">
@@ -54,6 +58,7 @@ function Bills() {
           <h1>My Bills</h1>
           <p>View and manage your electricity bills.</p>
         </div>
+
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value)}
@@ -90,7 +95,10 @@ function Bills() {
                   </span>
                 </td>
                 <td>
-                  <button className="bill-action">
+                  <button
+                    className="bill-action"
+                    onClick={() => navigate(`/user/bills/${bill.id}`)}
+                  >
                     {bill.status === "Paid" ? "View" : "View / Pay"}
                   </button>
                 </td>

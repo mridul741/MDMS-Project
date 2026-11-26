@@ -1,0 +1,158 @@
+
+.meter-data-page {
+  padding: 32px;
+  color: var(--text-h);
+}
+
+.meter-data-header {
+  margin-bottom: 24px;
+}
+
+.meter-data-header h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.meter-data-header p {
+  color: var(--text);
+  margin: 0;
+}
+
+.meter-data-filters {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.meter-data-filters div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meter-data-filters label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.meter-data-filters input {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.meter-data-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.meter-data-summary div {
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.meter-data-summary p {
+  color: var(--text);
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.meter-data-summary h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.meter-chart-card,
+.meter-readings-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.meter-chart-card h2,
+.meter-readings-card h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.meter-chart-card > p {
+  color: var(--text);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.meter-chart {
+  width: 100%;
+  min-width: 0;
+}
+
+.meter-empty {
+  padding: 40px 10px;
+  text-align: center;
+  color: var(--text);
+}
+
+.meter-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.meter-readings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.meter-readings-table th,
+.meter-readings-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.meter-readings-table th {
+  color: var(--text);
+  font-weight: 600;
+  background: var(--code-bg);
+}
+
+.meter-readings-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.meter-demo-note {
+  color: var(--text);
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  .meter-data-page {
+    padding: 20px;
+  }
+
+  .meter-data-filters {
+    flex-direction: column;
+  }
+
+  .meter-data-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .meter-chart-card,
+  .meter-readings-card {
+    padding: 16px;
+  }
+}
