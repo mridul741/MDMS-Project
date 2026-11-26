@@ -1,7 +1,7 @@
 import { Suspense, type ReactNode } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Dashboard from "../features/end-user/pages/Dashboard";
-import ZoneLayout from "../features/zone/components/ZoneLayout";
+import AppLayout from "../shared/layout/AppLayout";
 import RouteErrorBoundary from "../shared/routes/RouteErrorBoundary";
 import {
   Alerts,
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/zone",
-    element: <ZoneLayout />,
+    element: <AppLayout role="zone" />,
     errorElement: <RouteErrorBoundary />,
     children: [
       { index: true, element: <Navigate to="/zone/dashboard" replace /> },

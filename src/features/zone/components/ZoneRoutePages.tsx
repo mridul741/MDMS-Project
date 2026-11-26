@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import "../zone.css";
 
 export const ZoneDashboard = lazy(() => import("../pages/Dashboard"));
 export const MeterManagement = lazy(() => import("../pages/MeterManagement"));
