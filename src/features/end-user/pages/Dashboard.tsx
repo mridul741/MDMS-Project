@@ -1,4 +1,18 @@
+
+import { useEffect, useState } from "react";
 import "./Dashboard.css";
+
+import {
+  getDailyConsumption,
+  getMonthlyConsumption,
+  getWeeklyConsumption,
+} from "../services/consumptionService";
+
+import type {
+  DailyData,
+  MonthlyData,
+  WeeklyData,
+} from "../types/consumption";
 
 const stats = [
   {
@@ -27,24 +41,62 @@ const stats = [
   },
 ];
 
-const consumption = [
-  { day: "Mon", value: 45 },
-  { day: "Tue", value: 65 },
-  { day: "Wed", value: 52 },
-  { day: "Thu", value: 80 },
-  { day: "Fri", value: 60 },
-  { day: "Sat", value: 90 },
-  { day: "Sun", value: 70 },
-];
-
 function Dashboard() {
+  const [dailyData, setDailyData] = useState<DailyData[]>([]);
+  const [weeklyData, setWeeklyData] = useState<WeeklyData[]>([]);
+  const [monthlyData, setMonthlyData] = useState<MonthlyData[]>([]);
+  const [error, setError] = useState("");
+  const [period, setPeriod] = useState("week");
+
+  useEffect(() => {
+    Promise.all([
+      getDailyConsumption(),
+      getWeeklyConsumption(),
+      getMonthlyConsumption(),
+    ])
+      .then(([daily, weekly, monthly]) => {
+        setDailyData(daily.data);
+        setWeeklyData(weekly.data);
+        setMonthlyData(monthly.data);
+      })
+      .catch((err: unknown) => {
+        console.error(err);
+        setError(
+          "Unable to load consumption data. Is JSON Server running?"
+        );
+      });
+  }, []);
+
+  const chartData =
+    period === "day"
+      ? dailyData.map((item) => ({
+          label: item.date,
+          value: item.units,
+        }))
+      : period === "month"
+        ? monthlyData.map((item) => ({
+            label: item.month,
+            value: item.units,
+          }))
+        : weeklyData.map((item) => ({
+            label: item.week,
+            value: item.units,
+          }));
+
+  const maxConsumption = Math.max(
+    ...chartData.map((item) => item.value),
+    1
+  );
+
   return (
     <div className="dashboard">
       <section className="welcome-banner">
         <div>
           <p className="welcome-label">CUSTOMER DASHBOARD</p>
           <h1>Welcome back, Customer!</h1>
-          <p>Here's an overview of your electricity usage and account.</p>
+          <p>
+            Here's an overview of your electricity usage and account.
+          </p>
         </div>
 
         <div className="meter-info">
@@ -76,28 +128,39 @@ function Dashboard() {
               <p>Track your electricity usage</p>
             </div>
 
-            <select aria-label="Consumption period" defaultValue="week">
+            <select
+              aria-label="Consumption period"
+              value={period}
+              onChange={(e) => setPeriod(e.target.value)}
+            >
               <option value="day">Day</option>
               <option value="week">Week</option>
               <option value="month">Month</option>
-              <option value="year">Year</option>
             </select>
           </div>
 
+          {error && <p role="alert">{error}</p>}
+
           <div className="chart">
-            {consumption.map((item) => (
-              <div className="chart-column" key={item.day}>
+            {chartData.map((item) => (
+              <div className="chart-column" key={item.label}>
                 <span className="chart-value">{item.value}</span>
                 <div className="chart-bar-area">
                   <div
                     className="chart-bar"
-                    style={{ height: `${item.value}%` }}
+                    style={{
+                      height: `${(item.value / maxConsumption) * 100}%`,
+                    }}
                   />
                 </div>
-                <span className="chart-label">{item.day}</span>
+                <span className="chart-label">{item.label}</span>
               </div>
             ))}
           </div>
+
+          {!error && chartData.length === 0 && (
+            <p>No consumption data available.</p>
+          )}
 
           <p className="chart-note">Consumption shown in kWh</p>
         </article>

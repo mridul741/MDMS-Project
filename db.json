@@ -1,0 +1,1693 @@
+{
+  "users": [
+    {
+      "id": "zone-admin-mangalore",
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@mdms.in",
+      "phone": "+91 98450 32100",
+      "role": "Zone Admin",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "Mangalore, Karnataka 575001",
+      "meterCount": 0
+    },
+    {
+      "id": "customer-1001",
+      "name": "Ananya Rao",
+      "email": "ananya@gmail.com",
+      "phone": "+91 9845 321000",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "24, Bejai, Mangalore, Karnataka 575001",
+      "meterCount": 2
+    },
+    {
+      "id": "customer-1002",
+      "name": "Vikram Shetty",
+      "email": "vikram@gmail.com",
+      "phone": "+91 9845 321123",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "25, Kadri, Mangalore, Karnataka 575001",
+      "meterCount": 2
+    },
+    {
+      "id": "customer-1003",
+      "name": "Priya Nair",
+      "email": "priya@gmail.com",
+      "phone": "+91 9845 321246",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "26, Kankanady, Mangalore, Karnataka 575001",
+      "meterCount": 2
+    },
+    {
+      "id": "customer-1004",
+      "name": "Arjun Kumar",
+      "email": "arjun@gmail.com",
+      "phone": "+91 9845 321369",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "27, Hampankatta, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1005",
+      "name": "Sneha Pai",
+      "email": "sneha@gmail.com",
+      "phone": "+91 9845 321492",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "28, Bejai, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1006",
+      "name": "Rohan D'Souza",
+      "email": "rohan@gmail.com",
+      "phone": "+91 9845 321615",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Deactivated",
+      "address": "29, Kadri, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1007",
+      "name": "Meera Bhat",
+      "email": "meera@gmail.com",
+      "phone": "+91 9845 321738",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "30, Kankanady, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1008",
+      "name": "Aditya Hegde",
+      "email": "aditya@gmail.com",
+      "phone": "+91 9845 321861",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "31, Hampankatta, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1009",
+      "name": "Kavya Shenoy",
+      "email": "kavya@gmail.com",
+      "phone": "+91 9845 321984",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "32, Bejai, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1010",
+      "name": "Nikhil Acharya",
+      "email": "nikhil@gmail.com",
+      "phone": "+91 9845 322107",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "33, Kadri, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1011",
+      "name": "Divya Kamath",
+      "email": "divya@gmail.com",
+      "phone": "+91 9845 322230",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "34, Kankanady, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    },
+    {
+      "id": "customer-1012",
+      "name": "Rahul Nayak",
+      "email": "rahul@gmail.com",
+      "phone": "+91 9845 322353",
+      "role": "Customer",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "address": "35, Hampankatta, Mangalore, Karnataka 575001",
+      "meterCount": 1
+    }
+  ],
+  "dailyData": [
+    {
+      "id": "1",
+      "date": "2026-11-01",
+      "units": 12.5
+    },
+    {
+      "id": "2",
+      "date": "2026-11-02",
+      "units": 14.2
+    },
+    {
+      "id": "3",
+      "date": "2026-11-03",
+      "units": 11.8
+    }
+  ],
+  "weeklyData": [
+    {
+      "id": "1",
+      "week": "Week 1",
+      "units": 85.4
+    },
+    {
+      "id": "2",
+      "week": "Week 2",
+      "units": 92.1
+    }
+  ],
+  "monthlyData": [
+    {
+      "id": "1",
+      "month": "October",
+      "units": 370.6
+    },
+    {
+      "id": "2",
+      "month": "November",
+      "units": 348.9
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone-mangalore",
+      "name": "Mangalore Zone",
+      "location": "Mangalore, Karnataka",
+      "pincode": "575001",
+      "description": "Coastal service area covering central Mangalore.",
+      "adminId": "zone-admin-mangalore",
+      "status": "Active"
+    }
+  ],
+  "meters": [
+    {
+      "id": "MTR-10001",
+      "ownerId": "customer-1001",
+      "ownerName": "Ananya Rao",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 1245.8,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-01-12",
+      "tariffCategory": "Commercial",
+      "address": "24, Bejai, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10002",
+      "ownerId": "customer-1001",
+      "ownerName": "Ananya Rao",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 1384.2,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-02-12",
+      "tariffCategory": "Residential",
+      "address": "24, Bejai, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10003",
+      "ownerId": "customer-1002",
+      "ownerName": "Vikram Shetty",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 1522.6,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-03-12",
+      "tariffCategory": "Residential",
+      "address": "25, Kadri, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10004",
+      "ownerId": "customer-1002",
+      "ownerName": "Vikram Shetty",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 1661,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-04-12",
+      "tariffCategory": "Residential",
+      "address": "25, Kadri, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10005",
+      "ownerId": "customer-1003",
+      "ownerName": "Priya Nair",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 1799.4,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-05-12",
+      "tariffCategory": "Commercial",
+      "address": "26, Kankanady, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10006",
+      "ownerId": "customer-1003",
+      "ownerName": "Priya Nair",
+      "zoneId": "zone-mangalore",
+      "status": "Deactivated",
+      "lastReading": 1937.8,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-06-12",
+      "tariffCategory": "Residential",
+      "address": "26, Kankanady, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10007",
+      "ownerId": "customer-1004",
+      "ownerName": "Arjun Kumar",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 2076.2,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-07-12",
+      "tariffCategory": "Residential",
+      "address": "27, Hampankatta, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10008",
+      "ownerId": "customer-1005",
+      "ownerName": "Sneha Pai",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 2214.6,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-08-12",
+      "tariffCategory": "Residential",
+      "address": "28, Bejai, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10009",
+      "ownerId": "customer-1006",
+      "ownerName": "Rohan D'Souza",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 2353,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-09-12",
+      "tariffCategory": "Commercial",
+      "address": "29, Kadri, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10010",
+      "ownerId": "customer-1007",
+      "ownerName": "Meera Bhat",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 2491.4,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-01-12",
+      "tariffCategory": "Residential",
+      "address": "30, Kankanady, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10011",
+      "ownerId": "customer-1008",
+      "ownerName": "Aditya Hegde",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 2629.8,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-02-12",
+      "tariffCategory": "Residential",
+      "address": "31, Hampankatta, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10012",
+      "ownerId": "customer-1009",
+      "ownerName": "Kavya Shenoy",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 2768.2,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-03-12",
+      "tariffCategory": "Residential",
+      "address": "32, Bejai, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10013",
+      "ownerId": "customer-1010",
+      "ownerName": "Nikhil Acharya",
+      "zoneId": "zone-mangalore",
+      "status": "Deactivated",
+      "lastReading": 2906.6,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-04-12",
+      "tariffCategory": "Commercial",
+      "address": "33, Kadri, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10014",
+      "ownerId": "customer-1011",
+      "ownerName": "Divya Kamath",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 3045,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-05-12",
+      "tariffCategory": "Residential",
+      "address": "34, Kankanady, Mangalore, Karnataka 575001"
+    },
+    {
+      "id": "MTR-10015",
+      "ownerId": "customer-1012",
+      "ownerName": "Rahul Nayak",
+      "zoneId": "zone-mangalore",
+      "status": "Active",
+      "lastReading": 3183.4,
+      "lastReadingAt": "2026-11-24T10:30:00+05:30",
+      "installedAt": "2025-06-12",
+      "tariffCategory": "Residential",
+      "address": "35, Hampankatta, Mangalore, Karnataka 575001"
+    }
+  ],
+  "meterReadings": [
+    {
+      "id": "MTR-10001-2026-11-24",
+      "meterId": "MTR-10001",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 1245.8,
+      "consumption": 5.2,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10001-2026-11-23",
+      "meterId": "MTR-10001",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 1240.3,
+      "consumption": 5.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10001-2026-11-22",
+      "meterId": "MTR-10001",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 1234.2,
+      "consumption": 5.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10001-2026-11-21",
+      "meterId": "MTR-10001",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 1227.5,
+      "consumption": 6.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10001-2026-11-20",
+      "meterId": "MTR-10001",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 1220.2,
+      "consumption": 6.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10001-2026-11-19",
+      "meterId": "MTR-10001",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 1212.3,
+      "consumption": 6.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10001-2026-11-18",
+      "meterId": "MTR-10001",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 1203.8,
+      "consumption": 7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10002-2026-11-24",
+      "meterId": "MTR-10002",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 1384.2,
+      "consumption": 5.9,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10002-2026-11-23",
+      "meterId": "MTR-10002",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 1378,
+      "consumption": 6.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10002-2026-11-22",
+      "meterId": "MTR-10002",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 1371.2,
+      "consumption": 6.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10002-2026-11-21",
+      "meterId": "MTR-10002",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 1363.8,
+      "consumption": 6.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10002-2026-11-20",
+      "meterId": "MTR-10002",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 1355.8,
+      "consumption": 7.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10002-2026-11-19",
+      "meterId": "MTR-10002",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 1347.2,
+      "consumption": 7.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10002-2026-11-18",
+      "meterId": "MTR-10002",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 1338,
+      "consumption": 7.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10003-2026-11-24",
+      "meterId": "MTR-10003",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 1522.6,
+      "consumption": 6.6,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10003-2026-11-23",
+      "meterId": "MTR-10003",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 1515.7,
+      "consumption": 6.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10003-2026-11-22",
+      "meterId": "MTR-10003",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 1508.2,
+      "consumption": 7.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10003-2026-11-21",
+      "meterId": "MTR-10003",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 1500.1,
+      "consumption": 7.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10003-2026-11-20",
+      "meterId": "MTR-10003",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 1491.4,
+      "consumption": 7.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10003-2026-11-19",
+      "meterId": "MTR-10003",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 1482.1,
+      "consumption": 8.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10003-2026-11-18",
+      "meterId": "MTR-10003",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 1472.2,
+      "consumption": 8.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10004-2026-11-24",
+      "meterId": "MTR-10004",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 1661,
+      "consumption": 7.3,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10004-2026-11-23",
+      "meterId": "MTR-10004",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 1653.4,
+      "consumption": 7.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10004-2026-11-22",
+      "meterId": "MTR-10004",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 1645.2,
+      "consumption": 7.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10004-2026-11-21",
+      "meterId": "MTR-10004",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 1636.4,
+      "consumption": 8.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10004-2026-11-20",
+      "meterId": "MTR-10004",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 1627,
+      "consumption": 8.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10004-2026-11-19",
+      "meterId": "MTR-10004",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 1617,
+      "consumption": 8.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10004-2026-11-18",
+      "meterId": "MTR-10004",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 1606.4,
+      "consumption": 9.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10005-2026-11-24",
+      "meterId": "MTR-10005",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 1799.4,
+      "consumption": 8,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10005-2026-11-23",
+      "meterId": "MTR-10005",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 1791.1,
+      "consumption": 8.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10005-2026-11-22",
+      "meterId": "MTR-10005",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 1782.2,
+      "consumption": 8.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10005-2026-11-21",
+      "meterId": "MTR-10005",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 1772.7,
+      "consumption": 8.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10005-2026-11-20",
+      "meterId": "MTR-10005",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 1762.6,
+      "consumption": 9.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10005-2026-11-19",
+      "meterId": "MTR-10005",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 1751.9,
+      "consumption": 9.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10005-2026-11-18",
+      "meterId": "MTR-10005",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 1768.2,
+      "consumption": 5.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10006-2026-11-24",
+      "meterId": "MTR-10006",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 1937.8,
+      "consumption": 8.7,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10006-2026-11-23",
+      "meterId": "MTR-10006",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 1928.8,
+      "consumption": 9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10006-2026-11-22",
+      "meterId": "MTR-10006",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 1919.2,
+      "consumption": 9.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10006-2026-11-21",
+      "meterId": "MTR-10006",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 1909,
+      "consumption": 9.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10006-2026-11-20",
+      "meterId": "MTR-10006",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 1916.6,
+      "consumption": 5.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10006-2026-11-19",
+      "meterId": "MTR-10006",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 1909.8,
+      "consumption": 5.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10006-2026-11-18",
+      "meterId": "MTR-10006",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 1902.4,
+      "consumption": 5.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10007-2026-11-24",
+      "meterId": "MTR-10007",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 2076.2,
+      "consumption": 9.4,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10007-2026-11-23",
+      "meterId": "MTR-10007",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 2066.5,
+      "consumption": 9.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10007-2026-11-22",
+      "meterId": "MTR-10007",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 2065.4,
+      "consumption": 5.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10007-2026-11-21",
+      "meterId": "MTR-10007",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 2059.1,
+      "consumption": 5.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10007-2026-11-20",
+      "meterId": "MTR-10007",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 2052.2,
+      "consumption": 6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10007-2026-11-19",
+      "meterId": "MTR-10007",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 2044.7,
+      "consumption": 6.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10007-2026-11-18",
+      "meterId": "MTR-10007",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 2036.6,
+      "consumption": 6.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10008-2026-11-24",
+      "meterId": "MTR-10008",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 2214.6,
+      "consumption": 5.5,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10008-2026-11-23",
+      "meterId": "MTR-10008",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 2208.8,
+      "consumption": 5.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10008-2026-11-22",
+      "meterId": "MTR-10008",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 2202.4,
+      "consumption": 6.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10008-2026-11-21",
+      "meterId": "MTR-10008",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 2195.4,
+      "consumption": 6.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10008-2026-11-20",
+      "meterId": "MTR-10008",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 2187.8,
+      "consumption": 6.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10008-2026-11-19",
+      "meterId": "MTR-10008",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 2179.6,
+      "consumption": 7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10008-2026-11-18",
+      "meterId": "MTR-10008",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 2170.8,
+      "consumption": 7.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10009-2026-11-24",
+      "meterId": "MTR-10009",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 2353,
+      "consumption": 6.2,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10009-2026-11-23",
+      "meterId": "MTR-10009",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 2346.5,
+      "consumption": 6.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10009-2026-11-22",
+      "meterId": "MTR-10009",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 2339.4,
+      "consumption": 6.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10009-2026-11-21",
+      "meterId": "MTR-10009",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 2331.7,
+      "consumption": 7.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10009-2026-11-20",
+      "meterId": "MTR-10009",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 2323.4,
+      "consumption": 7.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10009-2026-11-19",
+      "meterId": "MTR-10009",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 2314.5,
+      "consumption": 7.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10009-2026-11-18",
+      "meterId": "MTR-10009",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 2305,
+      "consumption": 8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10010-2026-11-24",
+      "meterId": "MTR-10010",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 2491.4,
+      "consumption": 6.9,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10010-2026-11-23",
+      "meterId": "MTR-10010",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 2484.2,
+      "consumption": 7.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10010-2026-11-22",
+      "meterId": "MTR-10010",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 2476.4,
+      "consumption": 7.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10010-2026-11-21",
+      "meterId": "MTR-10010",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 2468,
+      "consumption": 7.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10010-2026-11-20",
+      "meterId": "MTR-10010",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 2459,
+      "consumption": 8.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10010-2026-11-19",
+      "meterId": "MTR-10010",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 2449.4,
+      "consumption": 8.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10010-2026-11-18",
+      "meterId": "MTR-10010",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 2439.2,
+      "consumption": 8.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10011-2026-11-24",
+      "meterId": "MTR-10011",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 2629.8,
+      "consumption": 7.6,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10011-2026-11-23",
+      "meterId": "MTR-10011",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 2621.9,
+      "consumption": 7.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10011-2026-11-22",
+      "meterId": "MTR-10011",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 2613.4,
+      "consumption": 8.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10011-2026-11-21",
+      "meterId": "MTR-10011",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 2604.3,
+      "consumption": 8.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10011-2026-11-20",
+      "meterId": "MTR-10011",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 2594.6,
+      "consumption": 8.8,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10011-2026-11-19",
+      "meterId": "MTR-10011",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 2584.3,
+      "consumption": 9.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10011-2026-11-18",
+      "meterId": "MTR-10011",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 2573.4,
+      "consumption": 9.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10012-2026-11-24",
+      "meterId": "MTR-10012",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 2768.2,
+      "consumption": 8.3,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10012-2026-11-23",
+      "meterId": "MTR-10012",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 2759.6,
+      "consumption": 8.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10012-2026-11-22",
+      "meterId": "MTR-10012",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 2750.4,
+      "consumption": 8.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10012-2026-11-21",
+      "meterId": "MTR-10012",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 2740.6,
+      "consumption": 9.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10012-2026-11-20",
+      "meterId": "MTR-10012",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 2730.2,
+      "consumption": 9.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10012-2026-11-19",
+      "meterId": "MTR-10012",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 2742.2,
+      "consumption": 5.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10012-2026-11-18",
+      "meterId": "MTR-10012",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 2735.2,
+      "consumption": 5.5,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10013-2026-11-24",
+      "meterId": "MTR-10013",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 2906.6,
+      "consumption": 9,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10013-2026-11-23",
+      "meterId": "MTR-10013",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 2897.3,
+      "consumption": 9.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10013-2026-11-22",
+      "meterId": "MTR-10013",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 2887.4,
+      "consumption": 9.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10013-2026-11-21",
+      "meterId": "MTR-10013",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 2890.7,
+      "consumption": 5.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10013-2026-11-20",
+      "meterId": "MTR-10013",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 2884.2,
+      "consumption": 5.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10013-2026-11-19",
+      "meterId": "MTR-10013",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 2877.1,
+      "consumption": 5.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10013-2026-11-18",
+      "meterId": "MTR-10013",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 2869.4,
+      "consumption": 6.2,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10014-2026-11-24",
+      "meterId": "MTR-10014",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 3045,
+      "consumption": 9.7,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10014-2026-11-23",
+      "meterId": "MTR-10014",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 3039.6,
+      "consumption": 5.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10014-2026-11-22",
+      "meterId": "MTR-10014",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 3033.6,
+      "consumption": 5.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10014-2026-11-21",
+      "meterId": "MTR-10014",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 3027,
+      "consumption": 6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10014-2026-11-20",
+      "meterId": "MTR-10014",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 3019.8,
+      "consumption": 6.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10014-2026-11-19",
+      "meterId": "MTR-10014",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 3012,
+      "consumption": 6.6,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10014-2026-11-18",
+      "meterId": "MTR-10014",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 3003.6,
+      "consumption": 6.9,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10015-2026-11-24",
+      "meterId": "MTR-10015",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-24",
+      "reading": 3183.4,
+      "consumption": 5.8,
+      "note": "Scheduled smart reading"
+    },
+    {
+      "id": "MTR-10015-2026-11-23",
+      "meterId": "MTR-10015",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-23",
+      "reading": 3177.3,
+      "consumption": 6.1,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10015-2026-11-22",
+      "meterId": "MTR-10015",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-22",
+      "reading": 3170.6,
+      "consumption": 6.4,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10015-2026-11-21",
+      "meterId": "MTR-10015",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-21",
+      "reading": 3163.3,
+      "consumption": 6.7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10015-2026-11-20",
+      "meterId": "MTR-10015",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-20",
+      "reading": 3155.4,
+      "consumption": 7,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10015-2026-11-19",
+      "meterId": "MTR-10015",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-19",
+      "reading": 3146.9,
+      "consumption": 7.3,
+      "note": "Regular reading"
+    },
+    {
+      "id": "MTR-10015-2026-11-18",
+      "meterId": "MTR-10015",
+      "zoneId": "zone-mangalore",
+      "date": "2026-11-18",
+      "reading": 3137.8,
+      "consumption": 7.6,
+      "note": "Regular reading"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-2048",
+      "meterId": "MTR-10001",
+      "customerName": "Ananya Rao",
+      "zoneId": "zone-mangalore",
+      "type": "High consumption detected",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Pending",
+      "createdAt": "2026-11-24T10:30:00+05:30"
+    },
+    {
+      "id": "ALT-2047",
+      "meterId": "MTR-10002",
+      "customerName": "Ananya Rao",
+      "zoneId": "zone-mangalore",
+      "type": "Meter communication failure",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Pending",
+      "createdAt": "2026-11-24T11:30:00+05:30"
+    },
+    {
+      "id": "ALT-2046",
+      "meterId": "MTR-10003",
+      "customerName": "Vikram Shetty",
+      "zoneId": "zone-mangalore",
+      "type": "Abnormal reading frequency",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Pending",
+      "createdAt": "2026-11-24T12:30:00+05:30"
+    },
+    {
+      "id": "ALT-2045",
+      "meterId": "MTR-10004",
+      "customerName": "Vikram Shetty",
+      "zoneId": "zone-mangalore",
+      "type": "Low consumption detected",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Low",
+      "status": "Pending",
+      "createdAt": "2026-11-23T13:30:00+05:30"
+    },
+    {
+      "id": "ALT-2044",
+      "meterId": "MTR-10005",
+      "customerName": "Priya Nair",
+      "zoneId": "zone-mangalore",
+      "type": "Meter inactive for extended period",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Pending",
+      "createdAt": "2026-11-23T14:30:00+05:30"
+    },
+    {
+      "id": "ALT-2043",
+      "meterId": "MTR-10006",
+      "customerName": "Priya Nair",
+      "zoneId": "zone-mangalore",
+      "type": "High consumption detected",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Pending",
+      "createdAt": "2026-11-23T15:30:00+05:30"
+    },
+    {
+      "id": "ALT-2042",
+      "meterId": "MTR-10007",
+      "customerName": "Arjun Kumar",
+      "zoneId": "zone-mangalore",
+      "type": "Meter communication failure",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Pending",
+      "createdAt": "2026-11-22T16:30:00+05:30"
+    },
+    {
+      "id": "ALT-2041",
+      "meterId": "MTR-10008",
+      "customerName": "Sneha Pai",
+      "zoneId": "zone-mangalore",
+      "type": "Abnormal reading frequency",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Pending",
+      "createdAt": "2026-11-22T17:30:00+05:30"
+    },
+    {
+      "id": "ALT-2040",
+      "meterId": "MTR-10009",
+      "customerName": "Rohan D'Souza",
+      "zoneId": "zone-mangalore",
+      "type": "Low consumption detected",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Low",
+      "status": "Pending",
+      "createdAt": "2026-11-22T18:30:00+05:30"
+    },
+    {
+      "id": "ALT-2039",
+      "meterId": "MTR-10010",
+      "customerName": "Meera Bhat",
+      "zoneId": "zone-mangalore",
+      "type": "Meter inactive for extended period",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Pending",
+      "createdAt": "2026-11-21T10:30:00+05:30"
+    },
+    {
+      "id": "ALT-2038",
+      "meterId": "MTR-10011",
+      "customerName": "Aditya Hegde",
+      "zoneId": "zone-mangalore",
+      "type": "High consumption detected",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Pending",
+      "createdAt": "2026-11-21T11:30:00+05:30"
+    },
+    {
+      "id": "ALT-2037",
+      "meterId": "MTR-10012",
+      "customerName": "Kavya Shenoy",
+      "zoneId": "zone-mangalore",
+      "type": "Meter communication failure",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Pending",
+      "createdAt": "2026-11-21T12:30:00+05:30"
+    },
+    {
+      "id": "ALT-2036",
+      "meterId": "MTR-10013",
+      "customerName": "Nikhil Acharya",
+      "zoneId": "zone-mangalore",
+      "type": "Abnormal reading frequency",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Pending",
+      "createdAt": "2026-11-20T13:30:00+05:30"
+    },
+    {
+      "id": "ALT-2035",
+      "meterId": "MTR-10014",
+      "customerName": "Divya Kamath",
+      "zoneId": "zone-mangalore",
+      "type": "Low consumption detected",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Low",
+      "status": "Pending",
+      "createdAt": "2026-11-20T14:30:00+05:30"
+    },
+    {
+      "id": "ALT-2034",
+      "meterId": "MTR-10015",
+      "customerName": "Rahul Nayak",
+      "zoneId": "zone-mangalore",
+      "type": "Meter inactive for extended period",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Pending",
+      "createdAt": "2026-11-20T15:30:00+05:30"
+    },
+    {
+      "id": "ALT-2033",
+      "meterId": "MTR-10001",
+      "customerName": "Ananya Rao",
+      "zoneId": "zone-mangalore",
+      "type": "High consumption detected",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Resolved",
+      "createdAt": "2026-11-19T16:30:00+05:30"
+    },
+    {
+      "id": "ALT-2032",
+      "meterId": "MTR-10002",
+      "customerName": "Ananya Rao",
+      "zoneId": "zone-mangalore",
+      "type": "Meter communication failure",
+      "description": "Meter activity requires prompt review. Check the latest reading and device connectivity.",
+      "severity": "Critical",
+      "status": "Resolved",
+      "createdAt": "2026-11-19T17:30:00+05:30"
+    },
+    {
+      "id": "ALT-2031",
+      "meterId": "MTR-10003",
+      "customerName": "Vikram Shetty",
+      "zoneId": "zone-mangalore",
+      "type": "Abnormal reading frequency",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Resolved",
+      "createdAt": "2026-11-19T18:30:00+05:30"
+    },
+    {
+      "id": "ALT-2030",
+      "meterId": "MTR-10004",
+      "customerName": "Vikram Shetty",
+      "zoneId": "zone-mangalore",
+      "type": "Low consumption detected",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Low",
+      "status": "Resolved",
+      "createdAt": "2026-11-18T10:30:00+05:30"
+    },
+    {
+      "id": "ALT-2029",
+      "meterId": "MTR-10005",
+      "customerName": "Priya Nair",
+      "zoneId": "zone-mangalore",
+      "type": "Meter inactive for extended period",
+      "description": "The latest meter readings are outside the configured operating range.",
+      "severity": "Warning",
+      "status": "Resolved",
+      "createdAt": "2026-11-18T11:30:00+05:30"
+    }
+  ],
+  "zoneConsumption": [
+    {
+      "id": "week-1",
+      "zoneId": "zone-mangalore",
+      "range": "Week",
+      "label": "Mon",
+      "date": "2026-11-18",
+      "usage": 142,
+      "previous": 128
+    },
+    {
+      "id": "week-2",
+      "zoneId": "zone-mangalore",
+      "range": "Week",
+      "label": "Tue",
+      "date": "2026-11-19",
+      "usage": 168,
+      "previous": 141
+    },
+    {
+      "id": "week-3",
+      "zoneId": "zone-mangalore",
+      "range": "Week",
+      "label": "Wed",
+      "date": "2026-11-20",
+      "usage": 154,
+      "previous": 137
+    },
+    {
+      "id": "week-4",
+      "zoneId": "zone-mangalore",
+      "range": "Week",
+      "label": "Thu",
+      "date": "2026-11-21",
+      "usage": 214,
+      "previous": 176
+    },
+    {
+      "id": "week-5",
+      "zoneId": "zone-mangalore",
+      "range": "Week",
+      "label": "Fri",
+      "date": "2026-11-22",
+      "usage": 182,
+      "previous": 159
+    },
+    {
+      "id": "week-6",
+      "zoneId": "zone-mangalore",
+      "range": "Week",
+      "label": "Sat",
+      "date": "2026-11-23",
+      "usage": 248,
+      "previous": 198
+    },
+    {
+      "id": "week-7",
+      "zoneId": "zone-mangalore",
+      "range": "Week",
+      "label": "Sun",
+      "date": "2026-11-24",
+      "usage": 224,
+      "previous": 184
+    },
+    {
+      "id": "month-1",
+      "zoneId": "zone-mangalore",
+      "range": "Month",
+      "label": "Week 1",
+      "date": "2026-11-07",
+      "usage": 860,
+      "previous": 792
+    },
+    {
+      "id": "month-2",
+      "zoneId": "zone-mangalore",
+      "range": "Month",
+      "label": "Week 2",
+      "date": "2026-11-11",
+      "usage": 924,
+      "previous": 846
+    },
+    {
+      "id": "month-3",
+      "zoneId": "zone-mangalore",
+      "range": "Month",
+      "label": "Week 3",
+      "date": "2026-11-15",
+      "usage": 888,
+      "previous": 820
+    },
+    {
+      "id": "month-4",
+      "zoneId": "zone-mangalore",
+      "range": "Month",
+      "label": "Week 4",
+      "date": "2026-11-19",
+      "usage": 1012,
+      "previous": 934
+    },
+    {
+      "id": "month-5",
+      "zoneId": "zone-mangalore",
+      "range": "Month",
+      "label": "Week 5",
+      "date": "2026-11-23",
+      "usage": 376,
+      "previous": 342
+    }
+  ],
+  "zoneStats": [
+    {
+      "id": "zone-mangalore",
+      "zoneId": "zone-mangalore",
+      "name": "Mangalore Zone",
+      "activeMeters": 13,
+      "totalMeters": 15,
+      "averageUsage": 185,
+      "previousAverageUsage": 194,
+      "pendingAlerts": 15,
+      "criticalAlerts": 6,
+      "warningAlerts": 6,
+      "lowAlerts": 3,
+      "resolvedAlerts": 5,
+      "customerCount": 12,
+      "connectivity": 86.7
+    }
+  ],
+  "zoneSettings": [
+    {
+      "id": "zone-mangalore",
+      "zoneId": "zone-mangalore",
+      "highConsumption": 300,
+      "lowConsumption": 10,
+      "readingFrequencyMinutes": 60,
+      "inactiveMeterHours": 24,
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "inApp": true
+      }
+    }
+  ]
+}
