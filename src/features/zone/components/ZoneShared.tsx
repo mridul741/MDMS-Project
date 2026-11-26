@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ChevronLeft, ChevronRight, Inbox, Search, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, Inbox } from "lucide-react";
 import {
   Area,
   AreaChart,
@@ -11,6 +11,12 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import {
+  Modal as SharedModal,
+  PageHeading,
+  SearchField as SharedSearchField,
+  StatusBadge as SharedStatusBadge,
+} from "../../../shared/components/SharedComponents";
 import type { PaginatedResponse } from "../types/zone";
 
 export function PageHeader({
@@ -23,33 +29,18 @@ export function PageHeader({
   actions?: ReactNode;
 }) {
   return (
-    <div className="zone-page-heading">
-      <div>
-        <h1>{title}</h1>
-        <p>{subtitle}</p>
-      </div>
-      {actions && <div className="zone-heading-actions">{actions}</div>}
-    </div>
+    <PageHeading
+      title={title}
+      description={subtitle}
+      actions={actions}
+      className="zone-page-heading"
+      actionsClassName="zone-heading-actions"
+    />
   );
 }
 
 export function StatusBadge({ value }: { value: string }) {
-  const tone =
-    value === "Active" || value === "Resolved" || value === "Normal"
-      ? "success"
-      : value === "Critical"
-        ? "critical"
-        : value === "Warning" || value === "Pending"
-          ? "warning"
-          : value === "Low"
-            ? "info"
-            : "muted";
-  return (
-    <span className={`zone-status zone-status-${tone}`}>
-      <i />
-      {value}
-    </span>
-  );
+  return <SharedStatusBadge value={value} className="zone-status" />;
 }
 
 export function SearchField({
@@ -61,22 +52,7 @@ export function SearchField({
   onChange: (value: string) => void;
   placeholder: string;
 }) {
-  return (
-    <label className="zone-search">
-      <Search size={16} aria-hidden="true" />
-      <input
-        aria-label={placeholder}
-        placeholder={placeholder}
-        value={value}
-        onChange={(event) => onChange(event.target.value)}
-      />
-      {value && (
-        <button type="button" aria-label="Clear search" onClick={() => onChange("")}>
-          <X size={14} />
-        </button>
-      )}
-    </label>
-  );
+  return <SharedSearchField value={value} onChange={onChange} placeholder={placeholder} className="zone-search" />;
 }
 
 export function Modal({
@@ -92,29 +68,18 @@ export function Modal({
   onClose: () => void;
   children: ReactNode;
 }) {
-  if (!open) return null;
   return (
-    <div className="zone-modal-backdrop" onMouseDown={(event) => {
-      if (event.target === event.currentTarget) onClose();
-    }}>
-      <section
-        aria-labelledby="zone-modal-title"
-        aria-modal="true"
-        className="zone-modal"
-        role="dialog"
-      >
-        <header>
-          <div>
-            <h2 id="zone-modal-title">{title}</h2>
-            <p>{description}</p>
-          </div>
-          <button type="button" className="zone-icon-button" aria-label="Close dialog" onClick={onClose}>
-            <X size={18} />
-          </button>
-        </header>
-        {children}
-      </section>
-    </div>
+    <SharedModal
+      title={title}
+      description={description}
+      open={open}
+      onClose={onClose}
+      className="zone-modal"
+      backdropClassName="zone-modal-backdrop"
+      closeButtonClassName="zone-icon-button"
+    >
+      {children}
+    </SharedModal>
   );
 }
 
