@@ -162,7 +162,6 @@ export function DataTable<T>({
     </>
   );
 }
-
 export function UsageChart({
   title,
   subtitle,
@@ -226,4 +225,3 @@ export function UsageChart({
     </section>
   );
 }
-
