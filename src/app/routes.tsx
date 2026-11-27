@@ -2,11 +2,19 @@
 import { Suspense, type ReactNode } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
+// End-user pages
 import Dashboard from "../features/end-user/pages/Dashboard";
+import Bills from "../features/end-user/pages/Bills";
+import BillDetails from "../features/end-user/pages/BillDetails";
+import MeterData from "../features/end-user/pages/MeterData";
+import UserAlerts from "../features/end-user/pages/UserAlerts";
+import Profile from "../features/end-user/pages/Profile";
 
+// Shared layout
 import AppLayout from "../shared/layout/AppLayout";
 import RouteErrorBoundary from "../shared/routes/RouteErrorBoundary";
 
+// Zone pages
 import {
   MeterDetails,
   MeterManagement,
@@ -17,6 +25,7 @@ import {
   ZoneSettings,
 } from "../features/zone/components/ZoneRoutePages";
 
+// Enterprise pages
 import EnterpriseLayout from "../features/enterprise/components/EnterpriseLayout";
 import EnterpriseDashboard from "../features/enterprise/pages/Dashboard";
 import Zones from "../features/enterprise/pages/Zones";
@@ -41,8 +50,23 @@ function lazyElement(element: ReactNode) {
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Dashboard />,
+    element: <Navigate to="/user/dashboard" replace />,
     errorElement: <RouteErrorBoundary />,
+  },
+
+  // End-user routes
+  {
+    path: "/",
+    element: <AppLayout role="end-user" />,
+    errorElement: <RouteErrorBoundary />,
+    children: [
+      { path: "user/dashboard", element: <Dashboard /> },
+      { path: "user/bills", element: <Bills /> },
+      { path: "user/bills/:billId", element: <BillDetails /> },
+      { path: "user/meter-data", element: <MeterData /> },
+      { path: "user/alerts", element: <UserAlerts /> },
+      { path: "profile", element: <Profile /> },
+    ],
   },
 
   // Zone Admin routes
@@ -90,6 +114,7 @@ export const router = createBrowserRouter([
   {
     path: "/enterprise",
     element: <EnterpriseLayout />,
+    errorElement: <RouteErrorBoundary />,
     children: [
       {
         path: "dashboard",

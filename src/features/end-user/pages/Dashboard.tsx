@@ -1,6 +1,6 @@
-
 import { useEffect, useState } from "react";
 import "./Dashboard.css";
+import { useNavigate } from "react-router-dom";
 
 import {
   getDailyConsumption,
@@ -8,11 +8,7 @@ import {
   getWeeklyConsumption,
 } from "../services/consumptionService";
 
-import type {
-  DailyData,
-  MonthlyData,
-  WeeklyData,
-} from "../types/consumption";
+import type { DailyData, MonthlyData, WeeklyData } from "../types/consumption";
 
 const stats = [
   {
@@ -42,6 +38,7 @@ const stats = [
 ];
 
 function Dashboard() {
+  const navigate = useNavigate();
   const [dailyData, setDailyData] = useState<DailyData[]>([]);
   const [weeklyData, setWeeklyData] = useState<WeeklyData[]>([]);
   const [monthlyData, setMonthlyData] = useState<MonthlyData[]>([]);
@@ -61,9 +58,7 @@ function Dashboard() {
       })
       .catch((err: unknown) => {
         console.error(err);
-        setError(
-          "Unable to load consumption data. Is JSON Server running?"
-        );
+        setError("Unable to load consumption data. Is JSON Server running?");
       });
   }, []);
 
@@ -83,10 +78,7 @@ function Dashboard() {
             value: item.units,
           }));
 
-  const maxConsumption = Math.max(
-    ...chartData.map((item) => item.value),
-    1
-  );
+  const maxConsumption = Math.max(...chartData.map((item) => item.value), 1);
 
   return (
     <div className="dashboard">
@@ -94,9 +86,7 @@ function Dashboard() {
         <div>
           <p className="welcome-label">CUSTOMER DASHBOARD</p>
           <h1>Welcome back, Customer!</h1>
-          <p>
-            Here's an overview of your electricity usage and account.
-          </p>
+          <p>Here's an overview of your electricity usage and account.</p>
         </div>
 
         <div className="meter-info">
@@ -170,16 +160,19 @@ function Dashboard() {
           <p>Access your account services</p>
 
           <div className="quick-actions">
-            <button type="button">
+            <button type="button" onClick={() => navigate("/user/bills/1")}>
               Pay Bill <span>→</span>
             </button>
-            <button type="button">
+
+            <button type="button" onClick={() => navigate("/user/bills")}>
               View Bill History <span>→</span>
             </button>
-            <button type="button">
+
+            <button type="button" onClick={() => navigate("/user/meter-data")}>
               View Detailed Usage <span>→</span>
             </button>
-            <button type="button">
+
+            <button type="button" onClick={() => navigate("/user/alerts")}>
               Manage Notifications <span>→</span>
             </button>
           </div>
