@@ -1,35 +1,3 @@
-.dashboard {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.dashboard h1 {
-  margin: 0 0 24px;
-}
-
-.dashboard section {
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
-.dashboard h2 {
-  margin-top: 0;
-}
-
-.dashboard p {
-  margin: 8px 0;
-}
-
-.dashboard .error {
-  padding: 12px;
-  border-radius: 8px;
-  color: #991b1b;
-  background: #fee2e2;
-}
 
 .app-error-page {
   min-height: 100vh;
