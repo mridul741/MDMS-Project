@@ -2,6 +2,11 @@
 import { Suspense, type ReactNode } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
+// Authentication
+import Login from "../features/authentication/pages/Login";
+import RequireAuth from "../features/authentication/components/RequireAuth";
+import HomeRedirect from "../features/authentication/components/HomeRedirect";
+
 // End-user pages
 import Dashboard from "../features/end-user/pages/Dashboard";
 import Bills from "../features/end-user/pages/Bills";
@@ -48,110 +53,161 @@ function lazyElement(element: ReactNode) {
 }
 
 export const router = createBrowserRouter([
+  // Login
+  {
+    path: "/login",
+    element: <Login />,
+    errorElement: <RouteErrorBoundary />,
+  },
+
+  // Home redirect
   {
     path: "/",
-    element: <Navigate to="/user/dashboard" replace />,
+    element: <HomeRedirect />,
     errorElement: <RouteErrorBoundary />,
   },
 
   // End-user routes
   {
-    path: "/",
-    element: <AppLayout role="end-user" />,
-    errorElement: <RouteErrorBoundary />,
+    element: <RequireAuth allowedRole="end-user" />,
     children: [
-      { path: "user/dashboard", element: <Dashboard /> },
-      { path: "user/bills", element: <Bills /> },
-      { path: "user/bills/:billId", element: <BillDetails /> },
-      { path: "user/meter-data", element: <MeterData /> },
-      { path: "user/alerts", element: <UserAlerts /> },
-      { path: "profile", element: <Profile /> },
+      {
+        path: "/",
+        element: <AppLayout role="end-user" />,
+        errorElement: <RouteErrorBoundary />,
+        children: [
+          {
+            path: "user/dashboard",
+            element: <Dashboard />,
+          },
+          {
+            path: "user/bills",
+            element: <Bills />,
+          },
+          {
+            path: "user/bills/:billId",
+            element: <BillDetails />,
+          },
+          {
+            path: "user/meter-data",
+            element: <MeterData />,
+          },
+          {
+            path: "user/alerts",
+            element: <UserAlerts />,
+          },
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+        ],
+      },
     ],
   },
 
   // Zone Admin routes
   {
-    path: "/zone",
-    element: <AppLayout role="zone" />,
-    errorElement: <RouteErrorBoundary />,
+    element: <RequireAuth allowedRole="zone" />,
     children: [
       {
-        index: true,
-        element: <Navigate to="/zone/dashboard" replace />,
-      },
-      {
-        path: "dashboard",
-        element: lazyElement(<ZoneDashboard />),
-      },
-      {
-        path: "meters",
-        element: lazyElement(<MeterManagement />),
-      },
-      {
-        path: "meters/:meterId",
-        element: lazyElement(<MeterDetails />),
-      },
-      {
-        path: "users",
-        element: lazyElement(<UserManagement />),
-      },
-      {
-        path: "reports",
-        element: lazyElement(<ZoneReports />),
-      },
-      {
-        path: "alerts",
-        element: lazyElement(<ZoneAlerts />),
-      },
-      {
-        path: "settings",
-        element: lazyElement(<ZoneSettings />),
+        path: "/zone",
+        element: <AppLayout role="zone" />,
+        errorElement: <RouteErrorBoundary />,
+        children: [
+          {
+            index: true,
+            element: <Navigate to="/zone/dashboard" replace />,
+          },
+          {
+            path: "dashboard",
+            element: lazyElement(<ZoneDashboard />),
+          },
+          {
+            path: "meters",
+            element: lazyElement(<MeterManagement />),
+          },
+          {
+            path: "meters/:meterId",
+            element: lazyElement(<MeterDetails />),
+          },
+          {
+            path: "users",
+            element: lazyElement(<UserManagement />),
+          },
+          {
+            path: "reports",
+            element: lazyElement(<ZoneReports />),
+          },
+          {
+            path: "alerts",
+            element: lazyElement(<ZoneAlerts />),
+          },
+          {
+            path: "settings",
+            element: lazyElement(<ZoneSettings />),
+          },
+        ],
       },
     ],
   },
 
   // Enterprise routes
   {
-    path: "/enterprise",
-    element: <EnterpriseLayout />,
-    errorElement: <RouteErrorBoundary />,
+    element: <RequireAuth allowedRole="enterprise" />,
     children: [
       {
-        path: "dashboard",
-        element: <EnterpriseDashboard />,
-      },
-      {
-        path: "zones",
-        element: <Zones />,
-      },
-      {
-        path: "zones/:zoneId",
-        element: <ZoneDetails />,
-      },
-      {
-        path: "users",
-        element: <Users />,
-      },
-      {
-        path: "meters",
-        element: <Meters />,
-      },
-      {
-        path: "reports",
-        element: <Reports />,
-      },
-      {
-        path: "alerts",
-        element: <Alerts />,
-      },
-      {
-        path: "audit-logs",
-        element: <AuditLogs />,
-      },
-      {
-        path: "settings",
-        element: <Settings />,
+        path: "/enterprise",
+        element: <EnterpriseLayout />,
+        errorElement: <RouteErrorBoundary />,
+        children: [
+          {
+            index: true,
+            element: <Navigate to="/enterprise/dashboard" replace />,
+          },
+          {
+            path: "dashboard",
+            element: <EnterpriseDashboard />,
+          },
+          {
+            path: "zones",
+            element: <Zones />,
+          },
+          {
+            path: "zones/:zoneId",
+            element: <ZoneDetails />,
+          },
+          {
+            path: "users",
+            element: <Users />,
+          },
+          {
+            path: "meters",
+            element: <Meters />,
+          },
+          {
+            path: "reports",
+            element: <Reports />,
+          },
+          {
+            path: "alerts",
+            element: <Alerts />,
+          },
+          {
+            path: "audit-logs",
+            element: <AuditLogs />,
+          },
+          {
+            path: "settings",
+            element: <Settings />,
+          },
+        ],
       },
     ],
+  },
+
+  // Unknown routes
+  {
+    path: "*",
+    element: <HomeRedirect />,
   },
 ]);
